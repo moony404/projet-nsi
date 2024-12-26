@@ -1,0 +1,35 @@
+Une page d’accueil
+Deux pages (minimum) qui traitent par exemple de vos passions ou tout autres sujet dans la mesure du raisonnable
+CSS (externe) avec harmonisation des différentes pages du site
+Création d'un formulaire
+Fonctionnement du formulaire (page PHP /HORS PROGRAMME NSI/)
+Utilisation du JavaScript
+L'ENSEMBLE DOIT ÊTRE JOLI.
+
+Palette :
+#D5D1C6
+#9EAD84
+#547D54
+#38573F
+#324C40
+
+To do:
+CONFETTI BOUTON : https://codepen.io/rewkun/pen/ExMeeBVhttps://code-garage.fr/blog/creer-une-explosion-de-confettis-en-js-en-quelques-secondes
+
+Tab = done
+No tab = not done
+
+    Une page d’accueil
+
+    Deux pages (minimum) qui traitent par exemple de vos passions ou tout autres sujet dans la mesure du raisonnable
+
+    CSS (externe) avec harmonisation des différentes pages du site
+
+    Création d'un formulaire
+
+Fonctionnement du formulaire (page PHP /HORS PROGRAMME NSI/)
+
+    Utilisation du JavaScript
+
+L'ENSEMBLE DOIT ÊTRE JOLI.
+mdr c'est pas si jolie que ça

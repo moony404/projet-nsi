@@ -1,22 +1,234 @@
+/* @import url('fonts/Baloo_2/Baloo_2/Baloo2-VariableFont_wght.ttf'); */
+@font-face {
+    font-family: Baloo2;
+    src: url(fonts/Baloo2/Baloo_2/Baloo2-VariableFont_wght.ttf);
+}
+
 * {
-    padding: 0.6em;
+  margin: 0px;
+  justify-content: center;
 }
 
 body
 {
-    background-color: rgba(255, 202, 69, 0.6);
+  background-image: url(img/spawn.png);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vw;
+  background-position: center;
+  /* display: grid; */
+    background-color: white;
     color: black;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Baloo2;
     font-size: 25px;
+    /* justify-content: center; */
 }
 
-a:hover {
-    background-color: rgba(0, 0, 0, 0.236);
-    /* margin: 0.5em; */
-    padding: 0.2em;
-    /* size: 0.2em; */
-    border-radius: 9px;
-    border-width: 1px;
-    border-color: black;
+/* for the index.html page below */
+
+@media (max-width: 1440px) { /* things below applies to screen that are below 1440px width (max 1440px width) */
+  body {
+    /* background-size: inherit; */
+    background-size: auto 400vw;
+    /* background-repeat: repeat; */
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 4vw;
+  left: 4vw;
+  height: 10vw;
+  width: 10vw;
+  text-align: center;
+  cursor: pointer;
+  padding: 1vw;
+  border-radius: 9px;
+}
+
+.title {
+  height: auto;
+  margin: 1em;
+  color: wheat;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 9px;
+  text-align: center;
+}
+
+.inscription {
+  height: 1vw;
+}
+
+.navbar {
+    height: 3vw;
+    text-align: center;
+    width: 100vw;
+}
+
+.header {
+    height: 3em;
+    text-align: center;
+    height: 10vw;
+    top: 10px;
+    width: 100vw;
+    /* border: 2px solid red; */
+}
+
+.headerbox {
+  height: 3vw;
+  text-align: center;
+  height: 20em;
+  top: 10px;
+  width: 100vw;
+  /* border: 2px solid rgb(21, 255, 0); */
+  position: sticky;
+}
+
+.background {
+  width: 100vw;
+  height: 50vw;
+  filter: blur(4px);
+  /* position: fixed; */
+  /* background-size:cover */
+}
+
+
+/* section for testing below */
+/* .second_section {
+  height: 50vw;
+  background-color: lightgreen;
+} */
+
+
+
+.button_inscription {
     cursor: pointer;
+    height: 10vw;
+    position: relative;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    z-index: 2;
+    border-radius: 5px;
+    background-color: #547D54;
+    color: #fff;
+    font-family: Baloo2;
+    font-size: 20px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transform: rotateX(-5deg);
+    transition: all 0.1s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+  
+  button:hover {
+    background-color: #38573F;
+    font-size: 20px;
+    transform: scale(1.05) rotateY(5deg) rotateX(5deg);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+/* for the inscription.html page below */
+
+.back_button {
+  margin-top: 1vw;
+  margin-left: 1vw;
+}
+
+.form {
+  top: 15vw;
+  left: 33vw;
+  justify-content: center;
+  text-align: center;
+    position: relative;
+    width: 10em;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background: linear-gradient(to bottom, #9EAD84, #7e8d65);
+    border-radius: 10px;
+    overflow: hidden;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transform: rotateX(-10deg);
+    transition: all 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    animation: form-animation 0.1s ease-in-out;
+  }
+
+#btn{
+    top: 20vw;
+    left: 38%;
+    justify-content: center;
+    text-align: center;
+      z-index: 2;
+      position: relative;
+      width: 10em;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 20px;
+      background-color: #547D54;
+      color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      perspective: 1000px;
+      transform-style: preserve-3d;
+      transform: rotateX(-10deg);
+      transition: all 0.3s ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+      animation: form-animation 0.1s ease-in-out;
+  }
+  @keyframes form-animation {
+    from {
+      transform: rotateX(-5deg);
+      opacity: 0;
+    }
+  
+    to {
+      transform: rotateX(5deg);
+      opacity: 1;
+    }
+  }
+  
+  .input {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #93a375;
+    transition: border-color 0.15s ease-in-out, background-color 1000s ease-in-out, transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    color: rgb(255, 255, 255);
+    border: 2px solid #788464;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+  
+  .input::placeholder {
+    color: #ffffff94;
+  }
+  
+  .input:hover,
+  .input:focus {
+    border-color: #8c9a74;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05) rotateY(5deg);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    outline: none;
+  }
+
+  /* Styles pour le GIF d'incitation à scroller */
+  #scrollGIF {
+    position: relative;
+    top: 10%; /* Position ajustable */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50vw;
+    /* z-index: 1; */
+    display: block;
+    opacity: 1; /* Par défaut, opacité à 1 */
+    transition: opacity 0.2s ease; /* Transition fluide */
 }
