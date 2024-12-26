@@ -9,13 +9,13 @@
 </head>
 <body>
   <button class="back_button" onclick="history.back()">↜ Retour</button>
-    <form class="form" action="" method="get">
-        <input class="input" placeholder="Ton pseudo" type="text" name="pseudo">
-        <input class="input" placeholder="Pseudo de ton duo" type="text" name="pseudo">
-        <input class="input" placeholder="La couleur que tu veux"type="text" name="pseudo">
-    </form>
-<button id="btn">Valider</button>
-<canvas id="confetti-canvas"></canvas>
+  <form class="form" action="request.php" method="get">
+    <input class="input" placeholder="Ton pseudo" type="text" name="pseudo">
+    <input class="input" placeholder="Pseudo de ton duo" type="text" name="pseudo">
+    <input class="input" placeholder="La couleur que tu veux"type="text" name="pseudo">
+  </form>
+  <button id="btn">Valider</button>
+  <canvas id="confetti-canvas"></canvas>
 
 <!-- JS -->
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
